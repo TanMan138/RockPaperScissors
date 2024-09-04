@@ -1,0 +1,27 @@
+body{
+    background-color: rgb(30, 29, 29);;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: #ECDFCC;
+    text-align: center;
+}
+div,p{
+    margin: 0px;
+    padding: 0px;
+}
+button{
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgb(236, 223, 204);
+    background-color: transparent;
+    transition: border-color 0.3s;
+    cursor: pointer;
+    padding: 0px;
+}
+button:hover{
+    border-color: #697565;
+}
+button:active{
+    border-color: #3C3D37;
+}

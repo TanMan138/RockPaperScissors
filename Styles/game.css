@@ -1,0 +1,18 @@
+.gameGrid{
+    display: grid;
+    grid-template-columns: repeat(3,0.25fr);
+    justify-content: center;
+    margin-top: 50px;
+}
+.play{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gameAction{
+    width: 120px;
+    height: 120px;
+    font-size: 50px;
+    border-radius: 100px;
+}
+

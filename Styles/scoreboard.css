@@ -1,0 +1,16 @@
+.score{
+    color: #ECDFCC;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.scoreDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.resetScore{
+    color: #ECDFCC;
+    padding: 7px 10px;
+    border-radius: 10px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Revamp
+    </title>
+    <link rel="stylesheet" href="Styles/general.css">
+    <link rel="stylesheet" href="Styles/game.css">
+    <link rel="stylesheet" href="Styles/scoreboard.css">
+</head>
+<body>
+    <div>
+        <div>
+            <h1>Rock Paper Scissors</h1>
+        </div>
+        <div class="gameGrid">
+            <div class="play"><button class="gameAction" onclick="
+                 compMove = giveCompMove();
+                result = playGame(compMove,'rock');
+                ">&#9994;</button></div>
+            <div class="play"><button class="gameAction" onclick="
+                compMove = giveCompMove();
+                result = playGame(compMove,'paper');
+                    ">&#9995;</button></div>
+            <div class="play" onclick="
+            compMove = giveCompMove();
+            result = playGame(compMove,'scissors');
+                "><button class="gameAction">&#9996;</button></div>
+        </div>
+        <div class="score">
+            <p class="scoreKeeper">Wins: 0, Losses: 0, Ties: 0</p>
+        </div>
+        <div class="scoreDiv">
+            <button class="resetScore" onclick="
+                score.losses=0
+                score.wins=0
+                score.ties=0
+                localStorage.removeItem('score')
+                alert('The score has been reset!')
+                updateScoreKeeper()
+                ">Reset Score</button>
+        </div>
+    </div>
+    <script src="Scripts/script.js"></script>
+</body>
+</html>
